@@ -23,35 +23,36 @@ Install the required libraries using pip:
 
 ```bash
 pip install pandas matplotlib yfinance statsmodels
+```
+## Usage
 
-Usage
+- Update the ticker variable in the script to your desired stock symbol (example: 'NVDA' or 'MSTR').
 
-Update the ticker variable in the script to your desired stock symbol (example: 'NVDA' or 'MSTR').
+- Modify the start and end dates if necessary.
 
-Modify the start and end dates if necessary.
-
-Run the script in your terminal:
-
+## Run the script in your terminal:
+```bash
 python your_script_name.py
-or run it in a Jupiter notebook
+```
+- or run it in a Jupiter notebook
 
-Script Overview
+## Script Overview
 
-Data Downloading: Uses yfinance to download historical data for the specified ticker.
+- Data Downloading: Uses yfinance to download historical data for the specified ticker.
 
-Data Cleaning: Extracts and cleans the 'Close' prices from the downloaded data.
+- Data Cleaning: Extracts and cleans the 'Close' prices from the downloaded data.
 
-ARIMA Model Fitting: Constructs and fits an ARIMA model to the time series data.
+- ARIMA Model Fitting: Constructs and fits an ARIMA model to the time series data.
 
-Forecasting: Generates a forecast for the next 5 business days along with a confidence interval.
+- Forecasting: Generates a forecast for the next 5 business days along with a confidence interval.
 
-Visualization: Uses Matplotlib to display the historical data, forecast, and confidence intervals.
+- Visualization: Uses Matplotlib to display the historical data, forecast, and confidence intervals.
 
-Troubleshooting
+# Troubleshooting
 
-Ensure that the ticker symbol and date range provided return valid data.
+- Ensure that the ticker symbol and date range provided return valid data.
 
-If the script raises a ValueError, check that the downloaded data is not empty and that there are no issues with network connectivity.
+- If the script raises a ValueError, check that the downloaded data is not empty and that there are no issues with network connectivity.
 
-License
+## License
 This project is open source and available under the MIT License.
